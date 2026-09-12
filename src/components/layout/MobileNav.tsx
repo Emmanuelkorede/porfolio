@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { Menu, X, FileText } from 'lucide-react';
 import { navLinks } from '@/src/data/navData';
 
+
 export function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 h-16 px-6 bg-background/80 backdrop-blur-md border-b border-border/50 z-50 flex md:hidden items-center justify-between">
-
       <Link href="/" className="font-bold text-lg tracking-wider text-foreground select-none">
         JOB <span className="text-accent underline decoration-accent decoration-2 underline-offset-4">EMMANUEL</span>
       </Link>
