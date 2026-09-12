@@ -4,14 +4,13 @@ export interface Project {
   title: string;
   status: ProjectStatus
   description: string;
-  metrics?: string[];
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
   image?: string;
 }
 
-export type StackCategory = 'Frontend' | 'Backend' | 'Database'  | 'Tools';
+export type StackCategory = 'Frontend' | 'Backend + Database'  | 'Tools and design';
 
 export interface StackItem {
   name: string;
