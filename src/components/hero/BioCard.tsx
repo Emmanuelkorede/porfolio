@@ -97,7 +97,7 @@ export function BioCard() {
       {/* Background Image Container with Dynamic Aspect Ratio */}
       <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-muted group shrink-0">
         <Image
-          src="/images/profile.jpeg"
+          src="/profile.png"
           alt="Job Emmanuel"
           fill
           priority
