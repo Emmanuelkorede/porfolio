@@ -7,6 +7,8 @@ export function Footer() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const thisYear = new Date().getFullYear();
+
   return (
     <footer className="relative bg-background text-foreground pt-16 pb-32 px-6 sm:px-12 md:px-20 border-t border-border/40 overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col gap-12">
@@ -24,7 +26,7 @@ export function Footer() {
             </h1>
             <div className="text-xs sm:text-sm text-muted-foreground font-sans leading-relaxed">
               <p>All rights reserved</p>
-              <p>&copy; 2026 Job Emmanuel</p>
+              <p>&copy; {thisYear} Job Emmanuel</p>
             </div>
           </div>
 
