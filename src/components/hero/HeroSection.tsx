@@ -6,7 +6,7 @@ import { CodeTerminal } from "./CodeTerminal";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-screen pt-16 lg:pt-20 pb-12 px-4 sm:px-6 lg:px-12 flex items-center justify-center bg-background">
+    <section className="relative w-full min-h-screen pt-20 lg:pt-2 pb-12 px-4 sm:px-6 lg:px-8 flex items-center justify-center bg-background">
       <div className="max-w-7xl w-full mx-auto">
         {/* Desktop Layout: Fits fully within standard screen height */}
         <div className="hidden lg:grid grid-cols-12 gap-6 items-center">
