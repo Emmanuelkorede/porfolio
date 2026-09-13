@@ -93,9 +93,9 @@ export function BioCard() {
   ];
 
   return (
-    <div className="relative bg-card border border-border rounded-3xl p-4 flex flex-col justify-between overflow-hidden shadow-xl w-full">
-      {/* Background Image Container with Overlay */}
-      <div className="relative w-full h-[240px] sm:h-[260px] lg:h-[230px] rounded-2xl overflow-hidden bg-muted group">
+    <div className="relative bg-card border border-border rounded-3xl p-5 flex flex-col justify-between overflow-hidden shadow-xl w-full h-full">
+      {/* Background Image Container with Dynamic Aspect Ratio */}
+      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-muted group shrink-0">
         <Image
           src="/images/profile.jpeg"
           alt="Job Emmanuel"
@@ -118,7 +118,7 @@ export function BioCard() {
                 aria-label={social.label}
                 className="w-8 h-8 rounded-full bg-background/70 backdrop-blur-md border border-border/60 flex items-center justify-center text-muted-foreground hover:text-accent hover:border-accent hover:scale-110 transition-all duration-200"
               >
-                <Icon className="w-3.5 h-3.5" />
+                <Icon className="w-4 h-4" />
               </a>
             );
           })}
@@ -126,29 +126,31 @@ export function BioCard() {
       </div>
 
       {/* Card Body */}
-      <div className="relative z-10 pt-3 flex flex-col gap-2">
-        <h1 className="text-xl sm:text-2xl font-bold text-foreground font-sans tracking-tight flex items-center min-h-[32px]">
-          Hey, I&apos;m&nbsp;<span className="text-accent">{displayedText}</span>
-          <span className="animate-pulse text-accent font-light ml-0.5">|</span>
-        </h1>
+      <div className="relative z-10 pt-4 flex flex-col justify-end mt-auto gap-3">
+        <div className="space-y-1">
+          <h1 className="text-xl sm:text-2xl font-bold text-foreground font-sans tracking-tight flex items-center min-h-8">
+            Hey, I&apos;m&nbsp;<span className="text-accent">{displayedText}</span>
+            <span className="animate-pulse text-accent font-light ml-0.5">|</span>
+          </h1>
 
-        <p className="text-xs text-muted-foreground font-sans leading-relaxed">
-          Computer Science student at OAU with a proven track record of shipping production-ready web apps and SaaS products.
-        </p>
+          <p className="text-xs sm:text-sm text-muted-foreground font-sans leading-relaxed">
+            Computer Science student at OAU with a proven track record of shipping production-ready web apps and SaaS products.
+          </p>
+        </div>
 
         {/* Action Buttons */}
         <div className="flex items-center gap-2 pt-1">
           <Link
             href="#projects"
             aria-label="View Work"
-            className="w-9 h-9 rounded-full bg-accent text-accent-foreground flex items-center justify-center hover:bg-accent/90 transition-all duration-200 shrink-0"
+            className="w-10 h-10 rounded-full bg-accent text-accent-foreground flex items-center justify-center hover:bg-accent/90 transition-all duration-200 shrink-0"
           >
-            <ArrowUpRight className="w-4 h-4 stroke-[2.5]" />
+            <ArrowUpRight className="w-5 h-5 stroke-[2.5]" />
           </Link>
 
           <Link
             href="#contact"
-            className="flex-1 py-2 px-3 rounded-full bg-accent text-accent-foreground text-xs font-medium text-center hover:bg-accent/90 transition-all duration-200"
+            className="flex-1 py-2.5 px-4 rounded-full bg-accent text-accent-foreground text-xs sm:text-sm font-medium text-center hover:bg-accent/90 transition-all duration-200"
           >
             Let&apos;s talk
           </Link>
@@ -156,9 +158,9 @@ export function BioCard() {
           <a
             href="/resume.pdf"
             download
-            className="py-2 px-3 rounded-full bg-muted border border-border text-foreground text-xs font-medium flex items-center gap-1 hover:bg-muted/80 transition-all duration-200"
+            className="py-2.5 px-4 rounded-full bg-muted border border-border text-foreground text-xs sm:text-sm font-medium flex items-center gap-1.5 hover:bg-muted/80 transition-all duration-200"
           >
-            <FileText className="w-3.5 h-3.5" />
+            <FileText className="w-4 h-4" />
             <span>CV</span>
           </a>
         </div>
