@@ -24,9 +24,9 @@ export function MiddleContent() {
       {/* Top Header Badge & Live Time */}
       <div className="hidden lg:flex items-center justify-between w-full">
         <div className="flex items-center gap-3 bg-card/80 backdrop-blur-md border border-border rounded-full py-1.5 px-3.5 shadow-sm">
-          <div className="relative w-7 h-7 rounded-full overflow-hidden bg-muted shrink-0">
+          <div className="relative w-9 h-9 rounded-full overflow-hidden bg-muted shrink-0">
             <Image
-              src="/images/profile.jpeg"
+              src="/badge.jpeg"
               alt="Job Emmanuel"
               fill
               className="object-cover"
