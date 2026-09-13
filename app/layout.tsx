@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 import { MobileNav } from '@/src/components/layout/MobileNav';
 import { Navbar } from '@/src/components/layout/Navbar';
+import {Footer}  from  '@/src/components/layout/Footer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -27,11 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable} `}>
       <body>
         <MobileNav />
         {children}
         <Navbar />
+        <Footer />
       </body>
     </html>
   );
