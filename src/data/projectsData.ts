@@ -18,7 +18,6 @@ export const PROJECTS: Project[] = [
     stack: [
       "React",
       "TypeScript",
-      "Vite",
       "Tailwind CSS",
       "Node.js",
       "Express.js",
@@ -36,10 +35,7 @@ export const PROJECTS: Project[] = [
       "A feature-rich, high-performance Computer-Based Testing (CBT) web application designed to help students prepare for Nigerian tertiary entrance examinations (JAMB and Post-UTME). Features dual exam modes, smart tier enforcement, an interactive community feed, and a full admin control center.",
     stack: [
       "React",
-      "TypeScript",
-      "Vite",
       "Tailwind CSS",
-      "Lucide React",
       "Supabase",
       "PostgreSQL",
     ],
@@ -51,7 +47,7 @@ export const PROJECTS: Project[] = [
     status: "Live",
     description:
       "A free, no-signup digital birthday card creator built around a scrapbook and handwritten journal aesthetic. Allows users to create interactive gift boxes with cakes, polaroid photos, and sticky-note messages that automatically expire after 30 days.",
-    stack: ["NEXT js", "TypeScript", "Tailwind CSS", "Supabase"],
+    stack: ["NEXT js", "TypeScript", "Tailwind CSS", "Supabase" , "PostgreSQL"],
     liveUrl: "https://wishly-weld.vercel.app",
     githubUrl: "https://github.com/Emmanuelkorede/wishly",
   },

@@ -17,10 +17,9 @@ export const stackItems: StackItem[] = [
   { name: 'PostgreSQL', category: 'Backend + Database', iconName: 'postgresql' },
   { name: 'Supabase', category: 'Backend + Database', iconName: 'supabase' },
 
-  // --- Tools and design (Extracted from your third image) ---
+  // --- Tools and design ( ---
   { name: 'Git', category: 'Tools and design', iconName: 'git' },
   { name: 'GitHub', category: 'Tools and design', iconName: 'github' },
-  { name: 'Canva', category: 'Tools and design', iconName: 'canva' },
   { name: 'VS Code', category: 'Tools and design', iconName: 'vscode' },
   { name: 'Google', category: 'Tools and design', iconName: 'google' },
   { name: 'Gemini', category: 'Tools and design', iconName: 'gemini' },
