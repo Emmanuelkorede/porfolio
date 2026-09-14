@@ -6,7 +6,7 @@ import { CodeTerminal } from "./CodeTerminal";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full py-20 lg:py-10 px-4 sm:px-6 lg:px-8 flex items-center justify-center bg-background">
+    <section className="relative w-full py-20 lg:py-8 px-4 sm:px-6 lg:px-8 flex items-start justify-center bg-background">
       <div className="max-w-7xl w-full mx-auto">
         {/* Desktop Layout: Fluid Grid with stretch alignment */}
         <div className="hidden lg:grid grid-cols-12 gap-6 items-stretch">

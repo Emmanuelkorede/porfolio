@@ -95,7 +95,7 @@ export function BioCard() {
   return (
     <div className="relative bg-card border border-border rounded-3xl p-5 flex flex-col justify-between overflow-hidden shadow-xl w-full h-full">
       {/* Background Image Container with Dynamic Aspect Ratio */}
-      <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden bg-muted group shrink-0">
+      <div className="relative w-full aspect-[6/5] rounded-2xl overflow-hidden bg-muted group shrink-0">
         <Image
           src="/profile.png"
           alt="Job Emmanuel"

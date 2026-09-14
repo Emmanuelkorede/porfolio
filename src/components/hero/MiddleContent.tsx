@@ -20,16 +20,16 @@ export function MiddleContent() {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center h-full gap-6">
+    <div className="flex flex-col justify-center  h-full gap-6">
       {/* Top Header Badge & Live Time */}
       <div className="hidden lg:flex items-center justify-between w-full">
         <div className="flex items-center gap-3 bg-card/80 backdrop-blur-md border border-border rounded-full py-1.5 px-3.5 shadow-sm">
-          <div className="relative w-9 h-9 rounded-full overflow-hidden bg-muted shrink-0">
+          <div className="relative w-10 h-10 rounded-full overflow-hidden bg-muted shrink-0">
             <Image
               src="/badge.jpeg"
               alt="Job Emmanuel"
               fill
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
           <div className="text-xs">
