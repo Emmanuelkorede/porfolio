@@ -5,7 +5,7 @@ export const navLinks = [
   { name: 'About', href: '#about', icon: User },
   { name: 'Services', href: '#services', icon: Wrench },
   { name: 'Projects', href: '#projects', icon: FolderGit2 },
+    { name: 'Stack', href: '#stack', icon: Cpu },
   { name: 'Journey', href: '#journey', icon: Briefcase },
-  { name: 'Skills', href: '#skill', icon: Cpu },
   { name: 'Contact', href: '#contact', icon: Send },
 ];
