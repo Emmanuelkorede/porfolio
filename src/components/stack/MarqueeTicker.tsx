@@ -4,7 +4,6 @@ import { stackItems } from "@/src/data/stackData";
 import { TechIcon } from "@/src/data/stackIcons";
 
 export function MarqueeTicker() {
-  // Split items into two rows for opposing scroll directions
   const halfLength = Math.ceil(stackItems.length / 2);
   const row1 = stackItems.slice(0, halfLength);
   const row2 = stackItems.slice(halfLength);
@@ -12,7 +11,7 @@ export function MarqueeTicker() {
   return (
     <div className="w-full overflow-hidden space-y-3 py-2 select-none [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
       {/* Row 1 - Leftward Scroll */}
-      <div className="flex w-max animate-marquee space-x-3">
+      <div className="flex w-max animate-marquee space-x-3 hover:[animation-play-state:paused] [will-change:transform]">
         {[...row1, ...row1, ...row1, ...row1].map((item, idx) => (
           <div
             key={`r1-${idx}`}
@@ -27,7 +26,7 @@ export function MarqueeTicker() {
       </div>
 
       {/* Row 2 - Rightward Scroll */}
-      <div className="flex w-max animate-marquee-reverse space-x-3">
+      <div className="flex w-max animate-marquee-reverse space-x-3 hover:[animation-play-state:paused] [will-change:transform]">
         {[...row2, ...row2, ...row2, ...row2].map((item, idx) => (
           <div
             key={`r2-${idx}`}
