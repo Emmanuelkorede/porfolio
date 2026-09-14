@@ -2,6 +2,7 @@ import { HeroSection } from "@/src/components/hero/HeroSection";
 import { AboutSection } from "@/src/components/about/AboutSection";
 import { WhatIDoSection } from "@/src/components/whatido/WhatIDoSection";
 import { StackSection } from "@/src/components/stack/StackSection";
+import { JourneySection } from "@/src/components/journey/JourneySection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutSection />
       <WhatIDoSection />
       <StackSection />
+      <JourneySection />
     </>
   );
 }
