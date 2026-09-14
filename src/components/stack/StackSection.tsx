@@ -45,7 +45,7 @@ export function StackSection() {
               <h3 className="text-lg sm:text-xl font-semibold text-foreground tracking-tight italic font-sans">
                 Soft skill
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="grid grid-cols-2  gap-3">
                 {PERSONAL_DETAILS.softSkills.map((skill, idx) => (
                   <div key={idx} className="flex items-center gap-2.5">
                     <CheckCircle2 className="w-4 h-4 text-accent shrink-0" />
@@ -58,7 +58,7 @@ export function StackSection() {
             </div>
 
             {/* Interest & Language Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 pt-4 border-t border-border/40">
+            <div className="grid grid-cols-2 gap-8 pt-4 border-t border-border/40">
               {/* Interest */}
               <div className="space-y-3">
                 <h3 className="text-lg sm:text-xl font-semibold text-foreground tracking-tight italic font-sans">
