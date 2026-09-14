@@ -52,7 +52,7 @@ const TikTok = ({ className = "w-4 h-4" }: { className?: string }) => (
 );
 
 export function BioCard() {
-  const words = ["a Developer", "Job Emmanuel", "job.exe", "a Full-Stack Engineer"];
+  const words = ["a Developer", "Job Emmanuel", "job.exe"];
   
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");

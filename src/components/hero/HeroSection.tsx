@@ -6,26 +6,25 @@ import { CodeTerminal } from "./CodeTerminal";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full py-20 lg:py-8 px-4 sm:px-6 lg:px-8 flex items-start justify-center bg-background">
+    <section className="relative w-full min-h-[100dvh] pt-20 pb-10 lg:pt-8 lg:pb-10 px-4 sm:px-6 lg:px-8 flex items-center justify-center bg-background">
       <div className="max-w-7xl w-full mx-auto">
-        {/* Desktop Layout: Fluid Grid with stretch alignment */}
-        <div className="hidden lg:grid grid-cols-12 gap-6 items-stretch">
-          <div className="col-span-4 flex">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+          
+          {/* Bio Card */}
+          <div className="w-full max-w-md mx-auto md:max-w-none flex">
             <BioCard />
           </div>
-          <div className="col-span-4 flex flex-col justify-between">
+
+          {/* Middle Content */}
+          <div className="w-full max-w-md mx-auto md:max-w-none flex flex-col justify-center">
             <MiddleContent />
           </div>
-          <div className="col-span-4 flex items-center justify-center">
+
+          {/* Terminal (Vertically centered, natural content height) */}
+          <div className="w-full max-w-md mx-auto md:max-w-none md:col-span-2 lg:col-span-1 flex items-center justify-center">
             <CodeTerminal />
           </div>
-        </div>
 
-        {/* Mobile / Tablet Layout */}
-        <div className="flex flex-col gap-6 lg:hidden items-center w-full max-w-md mx-auto">
-          <BioCard />
-          <MiddleContent />
-          <CodeTerminal />
         </div>
       </div>
     </section>
