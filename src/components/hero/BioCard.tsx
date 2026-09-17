@@ -49,15 +49,15 @@ export function BioCard() {
   ];
 
   return (
-    <div className="relative bg-card border border-border rounded-3xl p-5 flex flex-col justify-between overflow-hidden shadow-xl w-full h-full">
-      {/* Background Image Container with Dynamic Aspect Ratio */}
-      <div className="relative w-full aspect-[6/5] rounded-2xl overflow-hidden bg-muted group shrink-0">
+    <div className="relative bg-card border border-border rounded-3xl p-4 flex flex-col justify-between overflow-hidden shadow-xl w-full h-full">
+      {/* Background Image Container */}
+      <div className="relative w-full aspect-[1.1/1] rounded-2xl overflow-hidden bg-muted group shrink-0">
         <Image
           src="/profile.png"
           alt="Job Emmanuel"
           fill
           priority
-          className="object-cover object-center grayscale hover:grayscale-0 transition-all duration-500"
+          className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-90" />
 
@@ -82,7 +82,7 @@ export function BioCard() {
       </div>
 
       {/* Card Body */}
-      <div className="relative z-10 pt-4 flex flex-col justify-end mt-auto gap-3">
+      <div className="relative z-10 pt-3 flex flex-col justify-end mt-auto gap-2.5">
         <div className="space-y-1">
           <h1 className="text-xl sm:text-2xl font-bold text-foreground font-sans tracking-tight flex items-center min-h-8">
             Hey, I&apos;m&nbsp;<span className="text-accent">{displayedText}</span>

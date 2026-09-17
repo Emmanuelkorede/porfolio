@@ -6,7 +6,7 @@ import { PROJECTS } from "@/src/data/projectsData";
 
 export function ProjectsSection() {
   return (
-    <section id="work" className="relative w-full py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-background">
+    <section id="projects" className="relative w-full py-16 lg:py-24 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl w-full mx-auto space-y-12">
         {/* Section Heading */}
         <SectionHeading number="03" title="Featured Work" />
