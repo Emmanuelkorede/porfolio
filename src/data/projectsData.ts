@@ -57,4 +57,13 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Emmanuelkorede/wishly",
     imageUrl: "/projectImages/wishly.png"
   },
+  {
+  title: "Goodness Arcade",
+  status: "Live",
+  description: "A personal mini-game arcade built with five original games, local high scores, and full offline PWA support.",
+  stack: ["React", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion"],
+  liveUrl: "https://goodness-arcade.vercel.app/arcade",
+  githubUrl: "https://github.com/Emmanuelkorede/Goodness",
+  imageUrl: "/projectImages/g-arcade.png"
+  }
 ];
