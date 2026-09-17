@@ -7,7 +7,7 @@ export interface Project {
   stack: string[];
   liveUrl?: string;
   githubUrl?: string;
-  image?: string;
+  imageUrl?: string;
 }
 
 export type StackCategory = 'Frontend' | 'Backend + Database'  | 'Tools and design';

@@ -2,6 +2,12 @@ import { Project } from "../types";
 
 export const PROJECTS: Project[] = [
   {
+    title : 'LodgeLink' ,
+    status : "BUILDING" ,
+    description : "A hyperlocal accommodation platform for OAU students to discover off-campus lodges in one place. Students can browse verified listings, filter by area, price and room type, view detailed information, and contact agents directly on WhatsApp. The platform also helps agents showcase their available properties and reach students actively searching for accommodation." ,
+    stack: ["Next js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
+  },
+  {
     title: "Ecclesia",
     status: "Live",
     description:
@@ -9,6 +15,7 @@ export const PROJECTS: Project[] = [
     stack: ["React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://ecclesia-church.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/Ecclesia",
+    imageUrl : '/projectImages\ecclesia.png'
   },
   {
     title: "BeeMagz CMS",
@@ -27,6 +34,7 @@ export const PROJECTS: Project[] = [
     ],
     liveUrl: "https://bee-magazine.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/dir-bee-magazine",
+    imageUrl : '/projectImages\bee-magz.png'
   },
   {
     title: "MM CBT (Mustnuel Media CBT)",
@@ -41,6 +49,7 @@ export const PROJECTS: Project[] = [
     ],
     liveUrl: "https://mustnuel-media-cbt.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/mustnuel-media-cbt",
+    imageUrl : "/projectImages\mustnuel-media.png"
   },
   {
     title: "Wishly",
@@ -50,5 +59,6 @@ export const PROJECTS: Project[] = [
     stack: ["NEXT js", "TypeScript", "Tailwind CSS", "Supabase" , "PostgreSQL"],
     liveUrl: "https://wishly-weld.vercel.app",
     githubUrl: "https://github.com/Emmanuelkorede/wishly",
+    imageUrl : "/projectImages\wishly.png"
   },
 ];
