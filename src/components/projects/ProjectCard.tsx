@@ -23,7 +23,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <Card className="group flex flex-col h-full border-border/70 hover:border-accent/60 transition-all duration-300 overflow-hidden bg-card/60 backdrop-blur-sm">
       {/* Media / Preview Header */}
-      <div className="relative w-full h-48 sm:h-52 bg-muted/40 border-b border-border/60 overflow-hidden flex items-center justify-center">
+      <div className="relative w-full h-36 sm:h-44 bg-muted/40 border-b border-border/60 overflow-hidden flex items-center justify-center">
         {imageSrc ? (
           <Image
             src={imageSrc}
@@ -33,21 +33,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         ) : (
-          /* Placeholder visual for projects under development */
-          <div className="w-full h-full flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-card via-muted/30 to-background p-6 text-center">
-            <div className="w-12 h-12 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent">
-              <Wrench className="w-6 h-6 animate-pulse" />
+          <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 bg-gradient-to-br from-card via-muted/30 to-background p-4 text-center">
+            <div className="w-10 h-10 rounded-xl bg-accent/10 border border-accent/20 flex items-center justify-center text-accent">
+              <Wrench className="w-5 h-5 animate-pulse" />
             </div>
-            <span className="text-xs font-mono font-semibold uppercase tracking-widest text-muted-foreground">
+            <span className="text-[10px] font-mono font-semibold uppercase tracking-widest text-muted-foreground">
               In Active Development
             </span>
           </div>
         )}
 
         {/* Status Badge Overlay */}
-        <div className="absolute top-3 right-3 z-10">
+        <div className="absolute top-2.5 right-2.5 z-10">
           <span
-            className={`px-3 py-1 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider border shadow-md backdrop-blur-md ${
+            className={`px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold uppercase tracking-wider border shadow-md backdrop-blur-md ${
               isBuilding
                 ? "bg-amber-500/15 border-amber-500/30 text-amber-400"
                 : "bg-emerald-500/15 border-emerald-500/30 text-emerald-400"
@@ -59,25 +58,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
       </div>
 
       {/* Content Body */}
-      <div className="flex flex-col flex-1 p-5 sm:p-6 space-y-4">
+      <div className="flex flex-col flex-1 p-4 sm:p-5 space-y-3">
         {/* Title */}
         <div className="flex items-center justify-between gap-2">
-          <h3 className="text-lg sm:text-xl font-extrabold font-sans text-foreground tracking-tight group-hover:text-accent transition-colors">
+          <h3 className="text-base sm:text-lg font-extrabold font-sans text-foreground tracking-tight group-hover:text-accent transition-colors">
             {project.title}
           </h3>
         </div>
 
         {/* Description */}
-        <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed flex-1 font-sans">
+        <p className="text-xs sm:text-sm text-muted-foreground leading-snug flex-1 font-sans">
           {project.description}
         </p>
 
         {/* Tech Stack Badges */}
-        <div className="flex flex-wrap gap-1.5 pt-2">
+        <div className="flex flex-wrap gap-1 pt-1">
           {project.stack.map((tech, idx) => (
             <span
               key={idx}
-              className="px-2.5 py-1 rounded-md bg-background/80 border border-border/60 text-[11px] font-mono text-muted-foreground"
+              className="px-2 py-0.5 rounded-md bg-accent/10 border border-accent/20 text-[10px] font-mono text-accent"
             >
               {tech}
             </span>
@@ -85,7 +84,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Action Footer */}
-        <div className="flex items-center justify-between pt-4 border-t border-border/50 text-xs font-mono">
+        <div className="flex items-center justify-between pt-3 border-t border-border/50 text-xs font-mono">
           {project.githubUrl ? (
             <a
               href={project.githubUrl}
