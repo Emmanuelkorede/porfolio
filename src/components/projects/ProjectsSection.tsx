@@ -3,6 +3,18 @@
 import { SectionHeading } from "../ui/SectionHeading";
 import { ProjectCard } from "./ProjectCard";
 import { PROJECTS } from "@/src/data/projectsData";
+import { motion, Variants } from "framer-motion";
+
+// Container variant to handle staggered entrance of child cards
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15, // Delay between each card's entrance
+    },
+  },
+};
 
 export function ProjectsSection() {
   return (
@@ -11,12 +23,18 @@ export function ProjectsSection() {
         {/* Section Heading */}
         <SectionHeading number="03" title="Featured Work" />
 
-        {/* Projects Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch">
+        {/* Staggered Projects Grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }} // Triggers slightly before full view
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 items-stretch"
+        >
           {PROJECTS.map((project, idx) => (
             <ProjectCard key={project.title || idx} project={project} />
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
