@@ -26,7 +26,7 @@ export function MiddleContent() {
         <div className="flex items-center gap-3 bg-card/80 backdrop-blur-md border border-border rounded-full py-1.5 px-3.5 shadow-sm">
           <div className="relative w-10 h-10 rounded-full overflow-hidden bg-muted shrink-0">
             <Image
-              src="/badge.jpeg"
+              src="/badgeprofile.jpeg"
               alt="Job Emmanuel"
               fill
               className="object-cover object-center"

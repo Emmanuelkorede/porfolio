@@ -6,7 +6,7 @@ import { CodeTerminal } from "./CodeTerminal";
 
 export function HeroSection() {
   return (
-    <section className="relative w-full min-h-[100dvh] pt-20 pb-10 lg:pt-8 lg:pb-10 px-4 sm:px-6 lg:px-8 flex items-center justify-center bg-background">
+    <section className="relative w-full min-h-[100dvh] pt-20 pb-10 lg:pt-6 lg:pb-10 px-4 sm:px-6 lg:px-8 flex items-center justify-center bg-background">
       <div className="max-w-7xl w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch">
           
