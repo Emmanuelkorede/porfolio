@@ -13,41 +13,40 @@ export function CodeTerminal() {
         <span className="text-[11px] text-muted-foreground select-none">portfolio.js</span>
       </div>
 
-      {/* Code Display */}
+      {/* Code Display with Syntax Highlighting */}
       <div className="p-5 text-foreground leading-relaxed overflow-x-hidden whitespace-pre-wrap break-words">
-        <p className="text-muted-foreground">
-          <span className="text-accent font-semibold">export const</span>{" "}
-          <span className="text-foreground">developer</span> = &#123;
+        <p>
+          <span className="text-[#c586c0] font-medium">export const</span>{" "}
+          <span className="text-[#9cdcfe]">developer</span> = <span className="text-[#ffd700]">&#123;</span>
         </p>
         
         <p className="pl-4 sm:pl-6">
-          <span className="text-muted-foreground">name:</span>{" "}
-          <span className="text-accent">&quot;Job Emmanuel&quot;</span>,
+          <span className="text-[#9cdcfe]">name:</span>{" "}
+          <span className="text-[#ce9178]">&quot;Job Emmanuel&quot;</span>,
         </p>
         
         <p className="pl-4 sm:pl-6">
-          <span className="text-muted-foreground">alias:</span>{" "}
-          <span className="text-accent">&quot;job.exe&quot;</span>,
+          <span className="text-[#9cdcfe]">alias:</span>{" "}
+          <span className="text-[#ce9178]">&quot;job.exe&quot;</span>,
         </p>
         
         <p className="pl-4 sm:pl-6">
-          <span className="text-muted-foreground">role:</span>{" "}
-          <span className="text-accent">&quot;Full-Stack Product Builder&quot;</span>,
+          <span className="text-[#9cdcfe]">role:</span>{" "}
+          <span className="text-[#ce9178]">&quot;Full-Stack Product Builder&quot;</span>,
         </p>
         
         <p className="pl-4 sm:pl-6">
-          <span className="text-muted-foreground">focus:</span>{" "}
-          <span className="text-accent">&quot;Shipping production-ready web software&quot;</span>,
+          <span className="text-[#9cdcfe]">focus:</span>{" "}
+          <span className="text-[#ce9178]">&quot;Shipping production-ready web software&quot;</span>,
         </p>
         
-        <div className="py-1.5" />
+        <div className="py-1" />
 
         <p className="pl-4 sm:pl-6">
-          <span className="text-accent font-semibold">create:</span> (idea) =&gt; (idea ?{" "}
-          <span className="text-accent">&quot;Reality&quot;</span> : <span className="text-muted-foreground">null</span>),
+          <span className="text-[#dcdcaa]">create:</span> <span className="text-[#da70d6]">(</span><span className="text-[#9cdcfe]">idea</span><span className="text-[#da70d6]">)</span> <span className="text-[#c586c0] font-medium">=&gt;</span> <span className="text-[#da70d6]">(</span><span className="text-[#9cdcfe]">idea</span> <span className="text-[#c586c0]">?</span> <span className="text-[#ce9178]">&quot;Reality&quot;</span> <span className="text-[#c586c0]">:</span> <span className="text-[#569cd6]">null</span><span className="text-[#da70d6]">)</span>,
         </p>
 
-        <p>&#125;;</p>
+        <p><span className="text-[#ffd700]">&#125;</span>;</p>
       </div>
     </div>
   );

@@ -34,15 +34,15 @@
 }
 
 :root {
-  --background: #090d16;
+  --background: #000000;
   --foreground: #f3f4f6;
-  --card: #0f172a;
+  --card: #0a0a0a;
   --card-foreground: #f8fafc;
-  --muted: #1e293b;
-  --muted-foreground: #94a3b8;
-  --border: #1e293b;
-  --accent: #3b82f6;
-  --accent-foreground: #ffffff;
+  --muted: #171717;
+  --muted-foreground: #a1a1aa;
+  --border: #262626;
+  --accent: #00e676;
+  --accent-foreground: #000000;
 }
 
 @layer base {
@@ -80,12 +80,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e293b;
+  background: #262626;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #334155;
+  background: #404040;
 }
 
 @keyframes marquee {
