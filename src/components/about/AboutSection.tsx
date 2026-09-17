@@ -48,8 +48,8 @@ export function AboutSection() {
           <div className="lg:col-span-7 flex flex-col gap-8">
             <div className="space-y-4 text-muted-foreground font-sans text-sm sm:text-base leading-relaxed">
               <p>
-                My journey into software engineering began with early curiosity—experimenting with block logic (
-                <span className="text-foreground font-medium">Scratch</span>) and 3D modeling—before evolving into a dedicated focus on full-stack web development.
+                My journey into software engineering began with early curiosity experimenting with block logic (
+                <span className="text-foreground font-medium">Scratch</span>) and 3D modeling before evolving into a dedicated focus on full-stack web development.
               </p>
 
               <p>

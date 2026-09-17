@@ -45,7 +45,7 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     period: "2026",
     title: "SHIPPING & FULL-STACK.",
     description:
-      "Everything clicked. Wrapped up my first year at OAU while diving into backend development with Node.js, Express, REST APIs, and Next.js — leading to shipping production software and launching my first SaaS.",
+      "Everything clicked. Wrapped up my first year at OAU while diving into backend development with Node.js, Express, REST APIs, and Next.js, leading to shipping production software and launching my first SaaS.",
     listTitle: "KEY HIGHLIGHTS",
     achievements: [
       "Completed first year studying at OAU",
