@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { Card } from "../ui/Card";
 import { ExternalLink, Wrench } from "lucide-react";
@@ -10,7 +11,12 @@ interface ProjectCardProps {
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
-  const imageSrc = project.imageUrl ? project.imageUrl.replace(/\\/g, "/") : null;
+  const imageSrc = project.imageUrl
+    ? project.imageUrl
+        .replace(/\\/g, "/")
+        .replace(/^public\//, "/")
+        .replace(/^(?!\/)/, "/")
+    : null;
   const isBuilding = project.status.toUpperCase() === "BUILDING";
   const primaryUrl = project.liveUrl || project.githubUrl;
 

@@ -15,7 +15,7 @@ export const PROJECTS: Project[] = [
     stack: ["React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://ecclesia-church.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/Ecclesia",
-    imageUrl : '/projectImages\ecclesia.png'
+    imageUrl: "/projectImages/ecclesia.png"
   },
   {
     title: "BeeMagz CMS",
@@ -34,7 +34,7 @@ export const PROJECTS: Project[] = [
     ],
     liveUrl: "https://bee-magazine.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/dir-bee-magazine",
-    imageUrl : '/projectImages\bee-magz.png'
+    imageUrl: "/projectImages/bee-magz.png"
   },
   {
     title: "MM CBT (Mustnuel Media CBT)",
@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
     ],
     liveUrl: "https://mustnuel-media-cbt.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/mustnuel-media-cbt",
-    imageUrl : "/projectImages\mustnuel-media.png"
+    imageUrl: "/projectImages/mustnuel-media.png"
   },
   {
     title: "Wishly",
@@ -59,6 +59,6 @@ export const PROJECTS: Project[] = [
     stack: ["NEXT js", "TypeScript", "Tailwind CSS", "Supabase" , "PostgreSQL"],
     liveUrl: "https://wishly-weld.vercel.app",
     githubUrl: "https://github.com/Emmanuelkorede/wishly",
-    imageUrl : "/projectImages\wishly.png"
+    imageUrl: "/projectImages/wishly.png"
   },
 ];
