@@ -112,7 +112,7 @@ export function BioCard() {
           </Link>
 
           <a
-            href="/resume.pdf"
+            href="/jobemmanuel.pdf"
             download
             className="py-2.5 px-4 rounded-full bg-muted border border-border text-foreground text-xs sm:text-sm font-medium flex items-center gap-1.5 hover:bg-muted/80 transition-all duration-200"
           >
