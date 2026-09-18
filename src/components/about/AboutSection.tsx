@@ -93,13 +93,12 @@ export function AboutSection() {
               className="space-y-4 text-muted-foreground font-sans text-sm sm:text-base leading-relaxed"
             >
               <p>
-                My journey into software engineering began with early curiosity experimenting with block logic (
-                <span className="text-foreground font-medium">Scratch</span>) and 3D modeling before evolving into a dedicated focus on full-stack web development.
-              </p>
+                  My journey into software development started with curiosity , experimenting with <span className="text-foreground font-medium">Scratch</span>, 3D modeling, and eventually web development. That curiosity grew into a focus on building full-stack applications and understanding how the pieces behind them fit together.
+                </p>
 
-              <p>
-                Beyond tutorial-driven learning, my primary focus is engineering production-ready software designed to solve real-world problems. I prioritize clean code, efficient database design, and seamless user experiences in every application I build.
-              </p>
+                <p>
+                  Today, I enjoy turning ideas into working products, from designing database structures and building APIs to creating interfaces that people can actually use. I care about understanding what I'm building, solving problems properly, and continuously improving how I engineer software.
+                </p>
             </motion.div>
 
             {/* Animated Highlight Cards */}

@@ -10,7 +10,7 @@ export const PROJECTS: Project[] = [
   {
     title: "Ecclesia",
     status: "Live",
-    description: "A multi-tenant church management SaaS designed to streamline attendance tracking, ministry administration, engagement analytics, and member communication.",
+    description: "A multi-tenant church management SaaS for managing attendance, members, ministries, events, analytics, and member communication.",
     stack: ["React", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
     liveUrl: "https://ecclesia-church.vercel.app/",
     githubUrl: "https://github.com/Emmanuelkorede/Ecclesia",
@@ -19,7 +19,7 @@ export const PROJECTS: Project[] = [
   {
     title: "BeeMagz CMS",
     status: "Live",
-    description: "A dynamic digital magazine and CMS built for a music video director, featuring a sleek public reader interface and admin dashboard.",
+    description: "A digital magazine and CMS built for a music video director, with a public reader experience and admin dashboard for managing content.",
     stack: [
       "React",
       "TypeScript",

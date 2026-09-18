@@ -90,7 +90,7 @@ export function BioCard() {
           </h1>
 
           <p className="text-xs sm:text-sm text-muted-foreground font-sans leading-relaxed">
-            Computer Science student at OAU with a proven track record of shipping production-ready web apps and SaaS products.
+            Computer Science student at OAU building and shipping real-world web applications and SaaS products.
           </p>
         </div>
 

@@ -1,30 +1,46 @@
-
-import { Layers, Database, Server, Layout } from "lucide-react";
-
+import { Layout, Server, Database, Layers, Smartphone, Code2 } from "lucide-react";
 
 export const CORE_SKILLS = [
   {
-    title: "Full-Stack SaaS Engineering",
+    number: "01",
+    title: "Frontend Development",
     description:
-      "Building and launching production-ready, multi-tenant applications from scratch using React, Next.js, and TypeScript.",
-    icon: Layers,
+      "Building responsive, interactive web interfaces using React, Next.js, TypeScript, and Tailwind CSS with a focus on usability.",
+    icon: Layout,
   },
   {
-    title: "Relational Database Architecture",
+    number: "02",
+    title: "Backend Development",
     description:
-      "Structuring, optimizing, and managing relational databases and secure data flows with PostgreSQL, Supabase, and Neon.",
-    icon: Database,
-  },
-  {
-    title: "Backend & API Development",
-    description:
-      "Designing robust server-side logic, routing, and scalable endpoints using Node.js and Express.js.",
+      "Designing server-side applications, REST APIs, authentication flows, and business logic with Node.js and Express.js.",
     icon: Server,
   },
   {
-    title: "Responsive UI & System Design",
+    number: "03",
+    title: "Database & Data Architecture",
     description:
-      "Crafting clean, mobile-first user interfaces with Tailwind CSS while maintaining clean version control workflows via Git.",
-    icon: Layout,
+      "Designing relational data models and managing application state with PostgreSQL, Supabase, and Neon.",
+    icon: Database,
+  },
+  {
+    number: "04",
+    title: "Full-Stack SaaS Development",
+    description:
+      "Taking complex ideas from concept to production-ready multi-tenant software across the full PERN stack and cloud deployment.",
+    icon: Layers,
+  },
+  {
+    number: "05",
+    title: "Responsive Design & Systems",
+    description:
+      "Creating modern user interfaces and component design systems that adapt seamlessly across all devices and screen sizes.",
+    icon: Smartphone,
+  },
+  {
+    number: "06",
+    title: "Problem Solving & Logic",
+    description:
+      "Breaking down complex technical requirements, debugging full-stack workflows, and engineering practical solutions through clean code.",
+    icon: Code2,
   },
 ] as const;

@@ -52,7 +52,7 @@ export function MiddleContent() {
         </h1>
         
         <p className="mt-4 text-sm lg:text-xs xl:text-sm text-muted-foreground font-sans leading-relaxed max-w-md">
-          Full-stack software engineer and undergraduate student at OAU, focused on building high-performance web applications, multi-tenant SaaS products, and robust backend architectures that turn complex problems into seamless digital experiences.
+          I enjoy taking ideas from early concepts to real, usable products , thinking through the problem, shaping the experience, building the underlying systems, and refining the details that make the final result feel complete.
         </p>
       </div>
 
@@ -63,7 +63,7 @@ export function MiddleContent() {
             2+
           </p>
           <p className="text-[10px] sm:text-xs lg:text-[10px] xl:text-xs font-mono tracking-widest uppercase text-muted-foreground mt-0.5">
-            Years Experience
+            YEARS BUILDING
           </p>
         </div>
 
@@ -72,7 +72,7 @@ export function MiddleContent() {
             10+
           </p>
           <p className="text-[10px] sm:text-xs lg:text-[10px] xl:text-xs font-mono tracking-widest uppercase text-muted-foreground mt-0.5">
-            Projects Completed
+            Projects Built
           </p>
         </div>
       </div>
