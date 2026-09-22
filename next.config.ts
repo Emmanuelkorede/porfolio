@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/jobemmanuel.pdf',
+        source: '/Jobemmanuel.pdf',
+        
         headers: [
           {
             key: 'Content-Disposition',
