@@ -86,7 +86,7 @@ export function MobileNav() {
 
           <a
             href="/jobemmanuel.pdf"
-            download
+            download="Emmanuel_Job_CV.pdf"
             onClick={() => setIsOpen(false)}
             className="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium text-accent hover:bg-accent/10 transition-colors"
           >
