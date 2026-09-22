@@ -1,7 +1,23 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  async headers() {
+    return [
+      {
+        source: '/jobemmanuel.pdf',
+        headers: [
+          {
+            key: 'Content-Disposition',
+            value: 'attachment; filename="Emmanuel_Job_CV.pdf"',
+          },
+          {
+            key: 'Content-Type',
+            value: 'application/pdf',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
