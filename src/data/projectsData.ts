@@ -2,12 +2,6 @@ import { Project } from "../types";
 
 export const PROJECTS: Project[] = [
   {
-    title: 'LodgeLink',
-    status: "BUILDING",
-    description: "A hyperlocal accommodation platform for OAU students to discover verified off-campus lodges and connect directly with agents.",
-    stack: ["Next js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS"],
-  },
-  {
     title: "Ecclesia",
     status: "Live",
     description: "A multi-tenant church management SaaS for managing attendance, members, ministries, events, analytics, and member communication.",
@@ -48,6 +42,7 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Emmanuelkorede/mustnuel-media-cbt",
     imageUrl: "/projectImages/mustnuel-media.png"
   },
+  
   {
     title: "Wishly",
     status: "Live",
@@ -57,6 +52,15 @@ export const PROJECTS: Project[] = [
     githubUrl: "https://github.com/Emmanuelkorede/wishly",
     imageUrl: "/projectImages/wishly.png"
   },
+    {
+  title: "oSHAMO",
+  status: "Live",
+  description: "An unofficial fan-made interactive web experience celebrating oSHAMO's Fuji-fusion sound, featuring 3D layered hero typography, a flip-card discography, and a glassmorphic dark-mode UI.",
+  stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  liveUrl: "https://oshamo.vercel.app/",
+  githubUrl: "https://github.com/Emmanuelkorede/oshamo",
+  imageUrl : "/projectImages/oshamo.png"
+  } , 
   {
   title: "Goodness Arcade",
   status: "Live",
@@ -65,5 +69,6 @@ export const PROJECTS: Project[] = [
   liveUrl: "https://goodness-arcade.vercel.app/arcade",
   githubUrl: "https://github.com/Emmanuelkorede/Goodness",
   imageUrl: "/projectImages/g-arcade.png"
-  }
+  }, 
+
 ];
