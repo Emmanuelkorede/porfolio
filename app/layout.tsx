@@ -5,6 +5,8 @@ import { MobileNav } from '@/src/components/layout/MobileNav';
 import { Navbar } from '@/src/components/layout/Navbar';
 import {Footer}  from  '@/src/components/layout/Footer';
 
+import { Analytics } from '@vercel/analytics/next';
+
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -50,6 +52,7 @@ export default function RootLayout({
         {children}
         <Navbar />
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
